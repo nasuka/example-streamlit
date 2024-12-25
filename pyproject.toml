@@ -1,0 +1,30 @@
+[project]
+name = "example-streamlit"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "nasuka", email = "nsk.smn@gmail.com" }
+]
+dependencies = [
+    "streamlit>=1.41.1",
+    "pandas>=2.2.3",
+    "lightgbm>=4.5.0",
+    "joblib>=1.4.2",
+    "scikit-learn>=1.6.0",
+]
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/example_streamlit"]

@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  streamlit:
+    build:
+      context: "."
+      dockerfile: "Dockerfile"
+    ports:
+      - 8550:8550
+    volumes:
+      - ./:/app/
