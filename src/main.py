@@ -5,7 +5,7 @@ MODEL = joblib.load("./models/titanic_model.pkl")
 
 
 def main():
-    st.title("タイタニック号の生存者を予測する")
+    st.title("タイタニック号の生存者を予測")
 
     pclass = st.selectbox("チケットのクラス", [1, 2, 3])
     age = st.slider("年齢", 0, 100, 29)
